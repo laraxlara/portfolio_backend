@@ -74,6 +74,6 @@ app.get('/send', async (req, res, next) => {
   }
 })
 
-app.listen(process.env.REACT_APP_PORT || port, () => {
+app.listen(process.env.PORT || port, () => {
   console.log(`Now listening on port ${port}`);
 }); 
