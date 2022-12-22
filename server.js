@@ -58,7 +58,7 @@ app.post('/send', async (req, res, next) => {
       }
       })
     await transport.sendMail({
-        from: email,
+        from: req.body.email,
         to: 'laraxlara97@gmail.com',
         subject: "Website",
         html: `<div className="email">
