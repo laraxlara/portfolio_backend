@@ -74,6 +74,5 @@ app.get('/send', async (req, res, next) => {
 })
 
 app.listen(process.env.PORT || port, () => {
-  console.log(process.env)
   console.log(`Now listening on port ${port}`);
 }); 
