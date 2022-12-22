@@ -39,7 +39,7 @@ app.get('/download', async (req, res, next) => {
   }
 })
 
-app.get('/send', async (req, res, next) => {
+app.post('/send', async (req, res, next) => {
   console.log(req.body)
   try {
     let {name, email, message } = req.body
