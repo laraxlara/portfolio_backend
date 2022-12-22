@@ -25,7 +25,6 @@ app.get('/download', async (req, res, next) => {
       'content-type': 'pdf'
     }
   }
-
   try {
     res.download(
       filePath,
