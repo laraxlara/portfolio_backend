@@ -59,7 +59,7 @@ app.get('/send', async (req, res, next) => {
       }
       })
     await transport.sendMail({
-        from: 'laraa.celic7@gmail.com',
+        from: email,
         to: 'laraxlara97@gmail.com',
         subject: "Website",
         html: `<div className="email">
