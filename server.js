@@ -63,7 +63,8 @@ app.post('/send', async (req, res, next) => {
         subject: "Website",
         html: `<div className="email">
         <h1>Message</h1>
-        <p>Message: ${message}</p>
+        <p>Message: ${email}
+        ${message}</p>
         </div>`
       })
       return res.status(200).json({ status: 200, message: 'Mail successfully sent'});
